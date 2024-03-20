@@ -90,6 +90,7 @@ class _LoginState extends State<Login> {
                 side: const BorderSide(
                   color: Colors.black,
                 ),
+                  minimumSize:Size(20, 50)
               ),
               child: const Text(
                 "Login",
