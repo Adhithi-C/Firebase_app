@@ -83,15 +83,15 @@ class _LoginState extends State<Login> {
             height: 40,
           ),
           Container(
+            width: double.infinity,
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                side: const BorderSide(
-                  color: Colors.black,
-                ),
-                  minimumSize:Size(20, 50)
-              ),
+                  backgroundColor: Colors.blue,
+                  side: const BorderSide(
+                    color: Colors.black,
+                  ),
+                  minimumSize: Size(20, 50)),
               child: const Text(
                 "Login",
                 style: TextStyle(fontSize: 20, color: Colors.black),
@@ -105,8 +105,7 @@ class _LoginState extends State<Login> {
             children: [
               Text(
                 "Don't have an account?",
-                style: TextStyle(color: Colors.black,
-                fontSize: 20),
+                style: TextStyle(color: Colors.black, fontSize: 20),
               ),
               TextButton(
                   onPressed: () {
@@ -118,12 +117,18 @@ class _LoginState extends State<Login> {
                   },
                   child: Text(
                     "SignUp",
-                    style: TextStyle(color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20),
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                   )),
             ],
-          )
+          ),
+          Container(
+              height: 50,
+              width: 60,
+              child: Image.network(
+                  'https://media.licdn.com/dms/image/D4E12AQG4S6LCQe18Ng/article-cover_image-shrink_720_1280/0/1676290212561?e=2147483647&v=beta&t=_DQjLcSS9J1rxEpDLhFBckNqYp4CqxsKy8WtnU-Q5SA'))
         ],
       ),
     );
